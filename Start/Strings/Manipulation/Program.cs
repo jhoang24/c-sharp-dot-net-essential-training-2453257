@@ -7,13 +7,20 @@ string str3 = "THIS is a STRING";
 string[] strs = {"one", "two", "three", "four"};
 
 // TODO: Length of a string 
-
+Console.WriteLine(str3.Length);
 
 // TODO: Access individual characters
-
+Console.WriteLine(str1[0]);
 
 // TODO: Iterate over a string like any other sequence of values
-
+foreach(char ch in str1)
+{
+    Console.Write(ch);
+    if(ch == 'b'){
+        Console.WriteLine();
+        break;
+    }
+}
 
 // TODO: String Concatenation         
 string outstr;
