@@ -24,13 +24,19 @@ foreach(char ch in str1)
 
 // TODO: String Concatenation         
 string outstr;
+outstr = String.Concat(strs);
 
 
 // TODO: Joining strings together with Join
+outstr = String.Join('.', strs);
+Console.WriteLine(outstr);
+outstr = String.Join("---", strs);
+Console.WriteLine(outstr);
 
 
 // TODO: String Comparison
-
+bool isEqual = str2.Equals(strs[0]);
+Console.WriteLine(isEqual);
 // Equals just returns a regular Boolean
 // bool isEqual = str2.Equals(str3);
 // Console.WriteLine($"{isEqual}");
@@ -39,6 +45,7 @@ string outstr;
 // < 0 : first string comes before second in sort order
 // 0 : first and second strings are same position in sort order
 // > 0 : first string comes after the second in sort order
-
+int compare = String.Compare(str2, "This is a string");
+Console.WriteLine(compare);
 
 // TODO: Replacing content
